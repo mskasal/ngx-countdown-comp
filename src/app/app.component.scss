@@ -1,0 +1,25 @@
+img {
+  transition: transform 200ms ease-in-out;
+}
+.actions {
+  margin: 100px auto 0 auto;
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ngx-countdown-bar {
+  height: 40px;
+  // With default colors
+  // remove comment and change ;)
+  // --bar-border-color: #3ca55c;
+  // --bar-bg-color: #ffffff;
+  // --bar-fill-color: #3ca55c;
+  // --filled-text-color: white;
+  // --unfilled-text-color: black;
+  // --text-right-offset: 40px;
+  // --fill-animation: 200ms ease-in-out;
+  // --gradient-start-color: #ef6947;
+  // --gradient-end-color: var(--bar-fill-color);
+}

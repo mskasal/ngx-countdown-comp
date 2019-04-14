@@ -1,0 +1,30 @@
+:host {
+  display: block;
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+  border: 1px solid var(--bar-border-color, #3ca55c);
+  border-radius: 5px;
+}
+.bg {
+  fill: var(--bar-bg-color, #ffffff);
+}
+
+.fill {
+  fill: url(#my-cool-gradient) var(--bar-fill-color, #3ca55c);
+}
+
+.unfilled-text {
+  fill: var(--unfilled-text-color, black);
+  transform: translatex(calc(100% - var(--text-right-offset, 40px)));
+}
+
+.filled-text {
+  fill: var(--filled-text-color, white);
+  transform: translatex(calc(100% - var(--text-right-offset, 40px)));
+}
+rect {
+  transition: all var(--fill-animation, 200ms ease-in-out);
+}
