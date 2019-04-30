@@ -1,4 +1,4 @@
-import { ViewChild, Input, Output, EventEmitter, ChangeDetectorRef } from '@angular/core'
+import { ViewChild, Input, Output, EventEmitter } from '@angular/core'
 import { NgxCountdownDirective } from '../ngx-countdown.directive'
 
 export class CountdownTimerRef {
@@ -8,10 +8,8 @@ export class CountdownTimerRef {
   @Output() tictoc = new EventEmitter()
 
   @ViewChild(NgxCountdownDirective) countdown: NgxCountdownDirective
-  constructor(private _changeDetector: ChangeDetectorRef) {}
 
   play() {
-    this._changeDetector.detectChanges()
     this.countdown.play()
   }
 
