@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 
 import { AppComponent } from './app.component'
-import { NgxCountdownModule } from '../../projects/ngx-countdown/src/public-api'
+import { NgxCountdownModule } from 'ngx-countdown-comp'
 
 @NgModule({
   declarations: [AppComponent],

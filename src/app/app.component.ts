@@ -1,10 +1,5 @@
 import { Component, ViewChild } from '@angular/core'
-import {
-  NgxCountdownDirective,
-  CountDownBarComponent,
-  TimerModel,
-  TimerStateType,
-} from '../../projects/ngx-countdown/src/public-api'
+import { NgxCountdownDirective, CountDownBarComponent, TimerModel, TimerStateType } from 'ngx-countdown-comp'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
