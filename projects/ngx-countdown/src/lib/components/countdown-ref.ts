@@ -1,10 +1,11 @@
-import { ViewChild, Input } from '@angular/core'
+import { ViewChild, Input, Output, EventEmitter } from '@angular/core'
 import { NgxCountdownDirective } from '../ngx-countdown.directive'
 
 export class CountdownTimerRef {
   state: string
   timer: number
   @Input() timeout: number
+  @Output() tictoc = new EventEmitter()
 
   @ViewChild(NgxCountdownDirective) countdown: NgxCountdownDirective
 

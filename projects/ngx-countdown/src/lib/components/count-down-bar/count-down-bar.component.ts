@@ -21,5 +21,6 @@ export class CountDownBarComponent extends CountdownTimerRef {
       'offset',
       `${100 - (((this.leftSeconds || 0.001) * 100) / this.timeout) * 1.7}%`
     )
+    this.tictoc.emit(event)
   }
 }

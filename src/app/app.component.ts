@@ -24,10 +24,14 @@ export class AppComponent {
   }
 
   onCdTicToc(event: TimerModel) {
-    console.log(event)
+    console.log('from directive', event)
 
     this.timer = event.stepTimer
     this.state = event.state
+  }
+
+  compTicToc(event: TimerModel) {
+    console.log('from component', event)
   }
 
   play() {
